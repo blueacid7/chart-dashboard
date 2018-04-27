@@ -1,0 +1,17 @@
+.DashboardHeader{
+    background-color: rgb(132, 196, 163);
+    height: 50px;
+}
+
+#ToggelSpan{
+    background: transparent;
+    color: aliceblue;
+    margin-left:20px;
+}
+#demo{
+    background-color: rgb(132, 196, 163);
+}
+
+input{
+    color: aliceblue;
+}
