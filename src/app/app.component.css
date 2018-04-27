@@ -1,0 +1,24 @@
+.DashboardHeader{
+    background-color: #0f4c6d;
+    height: 60px;
+}
+
+.ToggelSpan{
+    background: transparent;
+    color: aliceblue;
+    padding:15px;
+}
+#demo{
+    width:300px;
+    background-color: #0f4c6d;
+    padding:30px;
+    color: white;
+    margin-top: 10px;
+}
+
+input{
+    color: aliceblue;
+}
+.col-sm-12, .col-lg-6{
+    padding-top: 10px;
+}

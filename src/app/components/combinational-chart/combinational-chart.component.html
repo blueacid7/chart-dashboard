@@ -1,0 +1,51 @@
+<div>
+        <fusioncharts
+            [width]="width"
+            [height]="height"
+            [type]="type"
+            [dataFormat]="dataFormat"
+            [dataSource]="dataSource">
+        </fusioncharts>
+        <button type="button" class="btn myAppButton" data-toggle="modal" data-target="#CombintionalChartModal">Load Json</button>
+    </div>
+    <div class="modal fade" id="CombintionalChartModal" role="dialog">
+            <div class="modal-dialog modal-lg">
+                
+                  <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Configure your Combinational Chart</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body row">
+                            <div class="form-group col-sm-6">
+                                <label for="x-axis-label">X-Axis label:</label>
+                                <input type="text" class="form-control" id="x-axis-label" [(ngModel)]="xAxisLabel">
+                            </div>
+                            <div class="form-group col-sm-6">
+                                <label for="y-axis-label">Y-Axis label:</label>
+                                <input type="text" class="form-control" id="y-axis-label" [(ngModel)]="yAxisLabel">
+                            </div>
+                            <div class="form-group col-sm-6">
+                                    <label for="caption">Caption:</label>
+                                    <input type="text" class="form-control" id="caption" [(ngModel)]="caption">
+                            </div>
+                            <div class="form-group col-sm-6">
+                                    <label for="sub-caption">Sub Caption:</label>
+                                    <input type="text" class="form-control" id="sub-caption" [(ngModel)]="subCaption">
+                            </div>
+                            <div class="form-group col-sm-12">
+                                <label for="JSONData">JSON Data:</label>
+                                <textarea class="form-control" rows="20" id="jsonData-textArea" [(ngModel)]="tableData"></textarea>
+                            </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" (click)="saveConfiguration()" data-dismiss="modal">Save</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+                  
+            </div>
+        </div>
+    
+    
